@@ -14,7 +14,7 @@ class _splashScreenState extends State<splashScreen> {
   Widget build(BuildContext context) {
     return FlutterSplashScreen(
       setStateTimer: Duration(microseconds: 20),
-      nextScreen: homepage(),
+      nextScreen: Homepage(),
       splashScreenBody: Text('Animal Classifier'),
       
 
