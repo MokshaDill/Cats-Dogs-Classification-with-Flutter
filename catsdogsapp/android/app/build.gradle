@@ -1,7 +1,7 @@
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader('UTF-8') { reader ->
+    localPropertiesFile.withReader('UTF-8') { reader ->mmm
         localProperties.load(reader)
     }
 }
@@ -35,10 +35,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    aaptOptions {
-        noCompress 'tflite'
-        noCompress 'lite'
-    }
 
     kotlinOptions {
         jvmTarget = '1.8'
